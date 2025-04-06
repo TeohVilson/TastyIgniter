@@ -5,7 +5,7 @@ namespace Tests\Unit;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Date;
-use Tests\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class AttributeCastingTest extends TestCase
 {
