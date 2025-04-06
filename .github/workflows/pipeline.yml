@@ -20,6 +20,9 @@ jobs:
           tools: composer:v2
           coverage: none
 
+      - name: Set up environment variables
+        run: echo "APP_KEY=base64:your_generated_key_here" >> $GITHUB_ENV
+
       - name: Install composer dependencies
         run: composer install --no-interaction --no-progress
 
