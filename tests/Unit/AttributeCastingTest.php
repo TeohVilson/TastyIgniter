@@ -1,13 +1,13 @@
 <?php
 
-namespace Tests\Unit\Models;
+namespace Tests\Unit;
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Date;
 use Tests\TestCase;
 
-class UserTest extends TestCase
+class AttributeCastingTest extends TestCase
 {
     use RefreshDatabase;
 
