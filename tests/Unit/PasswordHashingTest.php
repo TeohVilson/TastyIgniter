@@ -1,13 +1,13 @@
 <?php
 
-namespace Tests\Unit\Models;
+namespace Tests\Unit;
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Hash;
-use Tests\TestCase;
+use PHPUnit\Framework\TestCase;
 
-class UserTest extends TestCase
+class PasswordHashingTest extends TestCase
 {
     use RefreshDatabase;
 
