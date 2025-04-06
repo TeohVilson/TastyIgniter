@@ -20,15 +20,15 @@ jobs:
           tools: composer:v2
           coverage: none
 
+      - name: Install composer dependencies
+        run: composer install --no-interaction --no-progress
+
       - name: Generate Application Key
         run: |
           php artisan key:generate --env=testing
 
       - name: Set APP_KEY as environment variable
         run: echo "APP_KEY=$(php artisan key:generate --show)" >> $GITHUB_ENV
-
-      - name: Install composer dependencies
-        run: composer install --no-interaction --no-progress
 
       - name: Run tests
         run: php vendor/bin/phpunit
